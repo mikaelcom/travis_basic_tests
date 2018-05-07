@@ -11,9 +11,10 @@ class GeneratorSoapClientFirstTest extends TestCase
     public function testFirstInstanceOfGeneratorMustBeReturned()
     {
         $options = GeneratorOptions::instance()->setComposerName('wsdltophp/invalid')
-        ->setDestination(__DIR__)
-        ->setOrigin('https://www.paypalobjects.com/wsdl/PayPalSvc.wsdl');
+            ->setDestination(__DIR__)
+            ->setOrigin('https://www.paypalobjects.com/wsdl/PayPalSvc.wsdl');
 
+        $GLOBALS['__tests__'] = $GLOBALS;
         $this->assertInstanceOf(Generator::class, new Generator($options));
     }
 
