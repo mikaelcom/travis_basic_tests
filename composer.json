@@ -1,0 +1,27 @@
+{
+    "name": "mikaelcom/travis_basic_tests",
+    "description": "Basic tests for Travis platform",
+    "type": "library",
+    "homepage" : "https://github.com/mikaelcom/travis_basic_tests",
+    "license" : "MIT",
+    "authors" : [
+        {
+            "name": "Mikaël DELSOL",
+            "email": "contact@mikael-delsol.fr",
+            "homepage": "http://www.mikael-delsol.fr",
+            "role": "Owner"
+        }
+    ],
+    "support" : {
+        "email" : "contact@mikael-delsol.fr"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "autoload-dev": {
+        "Tests\\": "tests/"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8 || ^6.0"
+    }
+}
