@@ -5,7 +5,7 @@ use WsdlToPhp\PackageBase\Tests\TestCase;
 use WsdlToPhp\PackageGenerator\ConfigurationReader\GeneratorOptions;
 use WsdlToPhp\PackageGenerator\Generator\Generator;
 
-class GeneratorSoapClientTest extends TestCase
+class GeneratorSoapClientFirstTest extends TestCase
 {
 
     public function testFirstInstanceOfGeneratorMustBeReturned()
