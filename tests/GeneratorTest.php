@@ -28,6 +28,6 @@ class GeneratorTest extends TestCase
         $generator->setOptionSchemasFolder('wsdl');
         $content = $generator->getUrlContent('http://api.search.live.net/search.wsdl');
         $this->assertNotNull($content);
-        print_r($generator->getSoapClient()->getSoapClient()->getSoapClient());
+        print_r(stream_context_get_options($generator->getSoapClient()->getSoapClient()->getSoapClient()->_stream_context));
     }
 }
