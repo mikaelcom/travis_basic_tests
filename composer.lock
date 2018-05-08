@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6e6fe9422a657eaa4f788f2ab8e01077",
+    "content-hash": "f30c798c8f364f92c4ecae67d2cfbb86",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -960,16 +960,16 @@
         },
         {
             "name": "wsdltophp/packagegenerator",
-            "version": "2.9.1",
+            "version": "2.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WsdlToPhp/PackageGenerator.git",
-                "reference": "258efa347daa8df4e3f81835fbc7fbdf3a7437a5"
+                "reference": "8f78f7b0d93351a1e17ba8f449093691b828b892"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WsdlToPhp/PackageGenerator/zipball/258efa347daa8df4e3f81835fbc7fbdf3a7437a5",
-                "reference": "258efa347daa8df4e3f81835fbc7fbdf3a7437a5",
+                "url": "https://api.github.com/repos/WsdlToPhp/PackageGenerator/zipball/8f78f7b0d93351a1e17ba8f449093691b828b892",
+                "reference": "8f78f7b0d93351a1e17ba8f449093691b828b892",
                 "shasum": ""
             },
             "require": {
@@ -1047,7 +1047,7 @@
                 "soap",
                 "wsdl"
             ],
-            "time": "2018-02-13T21:56:26+00:00"
+            "time": "2018-05-08T08:38:22+00:00"
         },
         {
             "name": "wsdltophp/phpgenerator",
@@ -2558,7 +2558,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "wsdltophp/packagegenerator": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
