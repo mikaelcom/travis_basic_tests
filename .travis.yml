@@ -9,6 +9,9 @@ php:
     - 7.0
     - 7.1
     - 7.2
+    
+before_script:
+    - php -r "print_r(new \SoapClient('https://www.paypalobjects.com/wsdl/PayPalSvc.wsdl'));"
 
 before_install:
     - composer self-update
