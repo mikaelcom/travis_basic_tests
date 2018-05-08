@@ -14,12 +14,12 @@ class GeneratorSoapClientFirstTest extends TestCase
             ->setDestination(__DIR__)
             ->setOrigin('https://www.paypalobjects.com/wsdl/PayPalSvc.wsdl');
 
-        $this->assertInstanceOf(Generator::class, new Generator($options));
+        $this->assertInstanceOf('WsdlToPhp\PackageGenerator\Generator\Generator', new Generator($options));
     }
 
     public function __testSoapClientWithPayPalUrlMustReturnASoapClientInstance()
     {
-        $this->assertInstanceOf(\SoapClient::class, new \SoapClient('https://www.paypalobjects.com/wsdl/PayPalSvc.wsdl'));
+        $this->assertInstanceOf('\SoapClient', new \SoapClient('https://www.paypalobjects.com/wsdl/PayPalSvc.wsdl'));
     }
 
     public function testSecondInstanceOfGeneratorMustBeReturned()
@@ -28,6 +28,6 @@ class GeneratorSoapClientFirstTest extends TestCase
             ->setDestination(__DIR__)
             ->setOrigin('https://www.paypalobjects.com/wsdl/PayPalSvc.wsdl');
 
-        $this->assertInstanceOf(Generator::class, new Generator($options));
+        $this->assertInstanceOf('WsdlToPhp\PackageGenerator\Generator\Generator', new Generator($options));
     }
 }
